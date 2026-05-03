@@ -91,78 +91,10 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:cen
   box-shadow:0 0 0 2px var(--g3),4px 4px 0 var(--g3);
   transition:transform .15s,box-shadow .15s}
 .btn-dl:hover{transform:translate(-2px,-2px);box-shadow:0 0 0 2px var(--g3),6px 6px 0 var(--g3),0 0 20px var(--gg)}
-
-/* PULSE no botão de download */
 @keyframes btnpulse{0%,100%{box-shadow:0 0 0 2px var(--g3),4px 4px 0 var(--g3),0 0 0 #2ecc4000}50%{box-shadow:0 0 0 2px var(--g3),4px 4px 0 var(--g3),0 0 22px #2ecc4077}}
 .btn-dl{animation:btnpulse 2.2s ease-in-out infinite}
 
 @keyframes fup{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
-
-/* PIXEL DIVIDER */
-.pdiv{width:100%;height:20px;
-  background:repeating-linear-gradient(90deg,var(--g3) 0 24px,var(--br3) 24px 48px,var(--g2) 48px 72px,var(--br2) 72px 96px);
-  opacity:.38;margin:0}
-
-/* UPSELL */
-.upsell{position:relative;z-index:1;padding:80px 24px;background:var(--dark2)}
-.upsell-inner{max-width:900px;margin:0 auto}
-.sec-label{font-family:var(--px);font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--g1);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.sec-label::before{content:'▶';font-size:.5rem}
-.sec-title{font-family:var(--px);font-size:clamp(.9rem,2.5vw,1.4rem);color:#fff;line-height:1.7;margin-bottom:10px}
-.sec-title .ac{color:var(--g1)}
-.sec-desc{font-size:1rem;color:var(--tan);max-width:560px;line-height:1.8;margin-bottom:48px}
-
-.upsell-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:22px}
-.ucard{background:var(--card);border:1px solid var(--border);border-radius:4px;
-  overflow:hidden;transition:transform .25s,box-shadow .25s,border-color .25s;position:relative}
-.ucard:hover{transform:translateY(-6px);box-shadow:0 20px 48px #00000099,0 0 0 1px var(--g2);border-color:var(--g2)}
-.ucard-thumb{height:140px;display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(ellipse at center,#1a3015,#0a1208);font-size:3.5rem;
-  position:relative}
-.ucard-thumb::after{content:'';position:absolute;inset:0;
-  background:repeating-linear-gradient(0deg,transparent 0 3px,#ffffff04 3px 4px)}
-.uribbon{position:absolute;top:10px;right:-6px;font-family:var(--px);font-size:.38rem;
-  padding:5px 14px 5px 10px;border-radius:2px 0 0 2px;text-transform:uppercase}
-.rf{background:var(--g2);color:#fff;box-shadow:-2px 2px 0 var(--g3)}
-.rh{background:#c0392b;color:#fff;box-shadow:-2px 2px 0 #7b241c}
-.rbundle{background:var(--amber);color:var(--dark);box-shadow:-2px 2px 0 #9a6a10}
-.ubody{padding:20px 18px 22px}
-.ucat{font-size:.7rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--g1);margin-bottom:6px}
-.uname{font-family:var(--px);font-size:.65rem;color:#fff;line-height:1.8;margin-bottom:8px}
-.udesc{font-size:.87rem;color:var(--tan);line-height:1.7;margin-bottom:16px}
-.uprice-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
-.uprice{font-family:var(--px);font-size:.8rem}
-.uprice.free{color:var(--g1)}.uprice.hot{color:#e74c3c}.uprice.bundle{color:var(--amber)}
-.old-price{font-size:.75rem;color:#555;text-decoration:line-through;font-weight:700}
-.saving{font-size:.72rem;font-weight:800;color:#e74c3c;background:#fdecea;padding:2px 8px;border-radius:2px}
-.ubtn{display:flex;align-items:center;justify-content:center;gap:8px;
-  width:100%;padding:12px;font-family:var(--bd);font-size:.85rem;font-weight:900;
-  letter-spacing:.08em;text-transform:uppercase;text-decoration:none;
-  border:none;cursor:pointer;border-radius:4px;transition:transform .15s,box-shadow .15s}
-.ubtn-g{background:var(--g2);color:#fff;box-shadow:0 0 0 2px var(--g3),3px 3px 0 var(--g3)}
-.ubtn-g:hover{transform:translate(-1px,-1px);box-shadow:0 0 0 2px var(--g3),5px 5px 0 var(--g3)}
-.ubtn-r{background:#c0392b;color:#fff;box-shadow:0 0 0 2px #7b241c,3px 3px 0 #7b241c}
-.ubtn-r:hover{transform:translate(-1px,-1px);box-shadow:0 0 0 2px #7b241c,5px 5px 0 #7b241c}
-.ubtn-a{background:var(--amber);color:var(--dark);box-shadow:0 0 0 2px #c8902a,3px 3px 0 #9a6a10}
-.ubtn-a:hover{transform:translate(-1px,-1px);box-shadow:0 0 0 2px #c8902a,5px 5px 0 #9a6a10}
-
-/* TIMER */
-.timer-wrap{background:var(--card);border:1px solid #e74c3c44;border-radius:4px;
-  padding:20px 24px;margin-bottom:32px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
-.timer-icon{font-size:2rem}
-.timer-text strong{display:block;font-family:var(--px);font-size:.55rem;color:#e74c3c;margin-bottom:4px;line-height:1.6}
-.timer-text span{font-size:.88rem;color:var(--tan)}
-.timer-count{font-family:var(--px);font-size:1.2rem;color:#e74c3c;
-  background:#1a0808;border:1px solid #e74c3c44;padding:8px 16px;border-radius:4px;
-  letter-spacing:.1em;min-width:100px;text-align:center}
-
-/* GUARANTEE */
-.guarantee{position:relative;z-index:1;padding:60px 24px;background:var(--dark)}
-.guarantee-inner{max-width:700px;margin:0 auto;text-align:center}
-.g-icon{font-size:3.5rem;margin-bottom:16px;filter:drop-shadow(0 0 12px #2ecc4066)}
-.g-title{font-family:var(--px);font-size:clamp(.8rem,2vw,1.1rem);color:#fff;line-height:1.7;margin-bottom:12px}
-.g-desc{font-size:.95rem;color:var(--tan);line-height:1.8}
 
 /* FOOTER */
 footer{background:var(--dark);border-top:1px solid var(--border);padding:28px 24px;text-align:center;position:relative;z-index:1}
@@ -173,17 +105,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:28px 24
 .flinks a:hover{color:var(--g1)}
 .fcopy{font-size:.75rem;color:#2ecc4040}
 
-/* REVEAL */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
-
-/* BLINK TIMER */
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.4}}
-
 @media(max-width:600px){
   .dl-box{padding:24px 18px}
-  .timer-wrap{flex-direction:column;text-align:center}
 }
 </style>
 </head>
@@ -223,104 +146,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:28px 24
     <a href="https://drive.google.com/uc?export=download&id=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" class="btn-dl">
       ⬇️ BAIXAR SCSKIN EDITOR
     </a>
-  </div>
-</section>
-
-<div class="pdiv"></div>
-
-<!-- UPSELL -->
-<section class="upsell">
-  <div class="upsell-inner">
-
-    <!-- TIMER -->
-    <div class="timer-wrap rv">
-      <div class="timer-icon">⏰</div>
-      <div class="timer-text">
-        <strong>OFERTA EXCLUSIVA PÓS-COMPRA!</strong>
-        <span>Aproveite estas ofertas especiais. Disponíveis por tempo limitado:</span>
-      </div>
-      <div class="timer-count" id="timer">15:00</div>
-    </div>
-
-    <div class="sec-label">Exclusivo para você</div>
-    <h2 class="sec-title">APROVEITE ESSAS <span class="ac">OFERTAS ESPECIAIS</span></h2>
-    <p class="sec-desc">Como cliente Nox Games, você tem acesso a ofertas exclusivas que não aparecem em nenhum outro lugar.</p>
-
-    <div class="upsell-grid">
-
-      <!-- UPSELL 1 — Pack de Skins -->
-      <div class="ucard rv d1">
-        <div class="ucard-thumb">
-          <div class="uribbon rh">🔥 Oferta</div>
-          🎨
-        </div>
-        <div class="ubody">
-          <p class="ucat">Pack Exclusivo</p>
-          <h3 class="uname">PACK 10 SKINS PREMIUM</h3>
-          <p class="udesc">10 skins exclusivas criadas pela Nox Games, prontas para usar no OrizonCraft. Inclui guerreiros, magos, exploradores e mais.</p>
-          <div class="uprice-row">
-            <span class="uprice hot">R$ 4,99</span>
-            <div style="display:flex;gap:6px;align-items:center">
-              <span class="old-price">R$ 9,99</span>
-              <span class="saving">-50%</span>
-            </div>
-          </div>
-          <!-- Troque o href pelo link do Kiwify do pack de skins -->
-          <a href="#" class="ubtn ubtn-r">🎨 QUERO O PACK</a>
-        </div>
-      </div>
-
-      <!-- UPSELL 2 — Bundle VIP -->
-      <div class="ucard rv d2">
-        <div class="ucard-thumb">
-          <div class="uribbon rbundle">⭐ Bundle</div>
-          🏆
-        </div>
-        <div class="ubody">
-          <p class="ucat">Bundle · VIP</p>
-          <h3 class="uname">SCSKIN EDITOR + PACK VIP</h3>
-          <p class="udesc">Você já tem o editor — agora complete com o Pack VIP: 20 skins exclusivas + atualizações vitalícias + suporte prioritário.</p>
-          <div class="uprice-row">
-            <span class="uprice bundle">R$ 9,99</span>
-            <div style="display:flex;gap:6px;align-items:center">
-              <span class="old-price">R$ 19,99</span>
-              <span class="saving">-50%</span>
-            </div>
-          </div>
-          <!-- Troque o href pelo link do Bundle no Kiwify -->
-          <a href="#" class="ubtn ubtn-a">⭐ QUERO O BUNDLE</a>
-        </div>
-      </div>
-
-      <!-- UPSELL 3 — Discord -->
-      <div class="ucard rv d3">
-        <div class="ucard-thumb">
-          <div class="uribbon rf">Grátis</div>
-          💬
-        </div>
-        <div class="ubody">
-          <p class="ucat">Comunidade</p>
-          <h3 class="uname">DISCORD NOX GAMES</h3>
-          <p class="udesc">Entre no servidor da comunidade! Receba updates em primeira mão, tire dúvidas e compartilhe suas skins com outros jogadores.</p>
-          <div class="uprice-row">
-            <span class="uprice free">GRÁTIS</span>
-          </div>
-          <a href="https://discord.gg/noxgames" target="_blank" class="ubtn ubtn-g">💬 ENTRAR NO DISCORD</a>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<div class="pdiv"></div>
-
-<!-- GARANTIA -->
-<section class="guarantee">
-  <div class="guarantee-inner rv">
-    <div class="g-icon">🛡️</div>
-    <h2 class="g-title">SATISFAÇÃO GARANTIDA</h2>
-    <p class="g-desc">Se tiver qualquer problema com o SCskin Editor, entre em contato pelo Discord ou redes sociais da Nox Games. Estamos aqui para ajudar! 🎮</p>
   </div>
 </section>
 
@@ -368,29 +193,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:28px 24
     wrap.appendChild(el);
   }
   setTimeout(function(){wrap.style.display='none';},5000);
-})();
-
-/* COUNTDOWN TIMER — 15 minutos */
-(function(){
-  var total=15*60;
-  var el=document.getElementById('timer');
-  var iv=setInterval(function(){
-    total--;
-    if(total<=0){clearInterval(iv);el.textContent='00:00';el.style.color='#888';return;}
-    var m=Math.floor(total/60);
-    var s=total%60;
-    el.textContent=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
-    if(total<=300){el.style.color='#e74c3c';el.style.animation='blink 1s ease-in-out infinite';}
-  },1000);
-})();
-
-/* SCROLL REVEAL */
-(function(){
-  var els=document.querySelectorAll('.rv');
-  var io=new IntersectionObserver(function(e){
-    e.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}});
-  },{threshold:.1});
-  els.forEach(function(el){io.observe(el);});
 })();
 </script>
 </body>
