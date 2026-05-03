@@ -348,247 +348,6 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
             </div>
           </div>
           <div class="aacts">
-            <a href="https://drive.google.com/uc?export=download&id=1WIG-6IksxZBf_keEbZ86WSm3puK5AzcM" ta
-/* SECTION */
-section{position:relative;z-index:1;padding:96px 24px}
-.cont{max-width:1160px;margin:0 auto}
-.slabel{font-family:var(--px);font-size:.46rem;letter-spacing:.2em;text-transform:uppercase;
-  color:var(--g1);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.slabel::before{content:'▶';font-size:.5rem}
-.stitle{font-family:var(--px);font-size:clamp(.9rem,2.8vw,1.5rem);color:#fff;line-height:1.7;margin-bottom:18px}
-.stitle .ac{color:var(--g1)}
-.sdesc{font-size:1rem;color:var(--tan);max-width:540px;line-height:1.8}
-
-/* APPS GRID */
-#apps{background:var(--dark2)}
-.apps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:26px;margin-top:52px}
-.acard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  overflow:hidden;display:flex;flex-direction:column;
-  transition:transform .25s,box-shadow .25s,border-color .25s;position:relative}
-.acard::before{content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg,#2ecc4008,transparent 60%);pointer-events:none}
-.acard:hover{transform:translateY(-8px) rotate(-.25deg);
-  box-shadow:0 22px 56px #00000099,0 0 0 1px var(--g2);border-color:var(--g2)}
-.athumb{height:190px;display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(ellipse at center,#1a3015,#0a1208);
-  position:relative;overflow:hidden}
-.athumb::after{content:'';position:absolute;inset:0;
-  background:repeating-linear-gradient(0deg,transparent 0 3px,#ffffff04 3px 4px);pointer-events:none}
-.athumb .ico{font-size:4.5rem;transition:transform .3s;
-  filter:drop-shadow(0 0 18px #2ecc4066)}
-.acard:hover .athumb .ico{transform:scale(1.1) rotate(3deg)}
-.ribbon{position:absolute;top:14px;right:-6px;
-  font-family:var(--px);font-size:.4rem;padding:6px 16px 6px 10px;
-  border-radius:2px 0 0 2px;text-transform:uppercase;letter-spacing:.1em}
-.rf{background:var(--g2);color:#fff;box-shadow:-2px 2px 0 var(--g3)}
-.rp{background:var(--amber);color:var(--dark);box-shadow:-2px 2px 0 #9a6a10}
-.rs{background:#333;color:#888;box-shadow:-2px 2px 0 #111}
-.abody{padding:24px 22px 28px;flex:1;display:flex;flex-direction:column}
-.acat{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--g1);margin-bottom:8px}
-.aname{font-family:var(--px);font-size:.7rem;color:#fff;line-height:1.8;margin-bottom:10px}
-.adesc{font-size:.89rem;color:var(--tan);line-height:1.75;flex:1;margin-bottom:20px}
-.ameta{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;flex-wrap:wrap;gap:8px}
-.aprice{font-family:var(--px);font-size:.75rem}
-.aprice.f{color:var(--g1)}.aprice.p{color:var(--amber)}
-.abadges{display:flex;gap:5px;flex-wrap:wrap}
-.bsm{font-size:.67rem;font-weight:800;padding:3px 9px;border-radius:2px;letter-spacing:.06em;text-transform:uppercase}
-.ban{background:#1b3a2c;color:#4ade80}.bcr{background:#1a2a10;color:var(--g1)}.bed{background:#2a1a10;color:var(--tan)}
-.aacts{display:flex;gap:10px;flex-wrap:wrap}
-.aacts .btn{padding:11px 20px;font-size:.78rem;flex:1;justify-content:center}
-/* add-slot */
-.acard-add{border:2px dashed #2ecc4025;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;gap:14px;min-height:320px;
-  border-radius:var(--r);transition:border-color .25s,color .25s;color:#2ecc4038}
-.acard-add:hover{border-color:#2ecc4055;color:#2ecc4060}
-.acard-add .big{font-size:2rem;line-height:1}
-.acard-add p{font-family:var(--px);font-size:.42rem;text-align:center;line-height:2}
-
-/* SKINS */
-#skins{background:var(--dark3)}
-.skins-hd{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:20px;margin-bottom:44px}
-.skins-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:14px}
-.skcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  overflow:hidden;transition:transform .2s,box-shadow .2s,border-color .2s;cursor:pointer}
-.skcard:hover{transform:translateY(-5px);border-color:var(--g2);box-shadow:0 14px 36px #00000088,0 0 0 1px var(--g2)}
-.skprev{height:150px;background:radial-gradient(ellipse at center,#1a2e10,#0a1208);
-  display:flex;align-items:center;justify-content:center;
-  font-family:var(--px);font-size:.42rem;color:#2ecc4050;text-align:center;line-height:2.2;
-  position:relative;overflow:hidden}
-.skinfo{padding:11px 13px}
-.skinfo strong{display:block;font-family:var(--px);font-size:.42rem;color:#fff;margin-bottom:5px;line-height:1.8}
-.skinfo .ft{color:var(--g1)}.skinfo .pt{color:var(--amber)}
-.sk-add{border:1px dashed #2ecc4020;display:flex;align-items:center;justify-content:center;
-  flex-direction:column;gap:8px;min-height:200px;border-radius:var(--r);color:#2ecc4030;transition:.25s}
-.sk-add:hover{border-color:#2ecc4050;color:#2ecc4060}
-.sk-add .big{font-size:1.6rem}
-.sk-add p{font-family:var(--px);font-size:.4rem;line-height:2;text-align:center}
-.skcta{margin-top:44px;text-align:center;padding:44px 24px;
-  background:var(--card);border:1px dashed #2ecc4028;border-radius:var(--r)}
-.skcta p{font-family:var(--px);font-size:.48rem;color:#2ecc4060;margin-bottom:16px;line-height:2.2}
-
-/* FEATURES */
-#features{background:var(--dark)}
-.feat-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:22px;margin-top:52px}
-.fcard{background:var(--card);border:1px solid var(--border);border-radius:var(--r);
-  padding:26px 22px;transition:border-color .25s,transform .2s}
-.fcard:hover{border-color:var(--g2);transform:translateY(-4px)}
-.ficon{font-size:2rem;margin-bottom:14px;filter:drop-shadow(0 0 8px #2ecc4050)}
-.ftitle{font-family:var(--px);font-size:.52rem;color:#fff;margin-bottom:10px;line-height:1.8}
-.fdesc{font-size:.88rem;color:var(--tan);line-height:1.75}
-
-/* SOBRE */
-#sobre{background:var(--dark2);position:relative;overflow:hidden}
-#sobre::before{content:'';position:absolute;top:-60px;right:-80px;width:380px;height:380px;border-radius:50%;
-  background:radial-gradient(circle,#2ecc4010,transparent 70%);pointer-events:none}
-.sgrid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center}
-.slogo-wrap{display:flex;flex-direction:column;align-items:center;gap:22px}
-.slogo{width:170px;height:170px;object-fit:contain;
-  filter:drop-shadow(0 0 30px #2ecc4060);animation:flt 4s ease-in-out infinite}
-.slogofb{width:170px;height:170px;border-radius:50%;border:3px solid var(--g2);
-  box-shadow:0 0 36px var(--gg);display:flex;align-items:center;justify-content:center;
-  background:radial-gradient(circle,#1a3015,#0a1208);font-size:5rem;
-  animation:flt 4s ease-in-out infinite}
-@keyframes flt{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
-.sstats{display:grid;grid-template-columns:1fr 1fr;gap:14px;width:100%}
-.sstat{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:16px;text-align:center}
-.sstat strong{display:block;font-family:var(--px);font-size:.85rem;color:var(--g1);margin-bottom:6px}
-.sstat span{font-size:.78rem;color:var(--tan);font-weight:700}
-.stext .sdesc+.sdesc{margin-top:14px}
-.stext .btn{margin-top:28px}
-
-/* CONTATO */
-#contato{background:var(--dark2)}
-.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.clinks{display:flex;flex-direction:column;gap:12px;margin-top:28px}
-.clink{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--border);
-  border-radius:var(--r);padding:16px 20px;text-decoration:none;color:var(--tan);
-  transition:border-color .2s,color .2s,transform .2s;font-weight:700;font-size:.9rem}
-.clink:hover{border-color:var(--g2);color:var(--g1);transform:translateX(4px)}
-.clink .ico{font-size:1.4rem}
-.clabel{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--g1);display:block;margin-bottom:2px}
-.csoon{display:flex;align-items:center;gap:14px;background:var(--card);
-  border:1px dashed #2ecc4018;border-radius:var(--r);padding:16px 20px;
-  color:#2ecc4035;font-weight:700;font-size:.9rem}
-.csoon .ico{font-size:1.4rem;opacity:.3}
-.clabel-s{font-size:.68rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;
-  color:#2ecc4028;display:block;margin-bottom:2px}
-
-/* INSTALL BOX */
-.ibox{background:var(--card);border:1px solid var(--border);border-radius:var(--r);padding:34px 28px}
-.ibox h3{font-family:var(--px);font-size:.62rem;color:#fff;margin-bottom:8px;line-height:1.8}
-.ibox p{font-size:.88rem;color:var(--tan);line-height:1.8;margin-bottom:26px}
-.isteps{list-style:none;display:flex;flex-direction:column;gap:15px;margin-bottom:28px}
-.istep{display:flex;gap:14px;align-items:flex-start}
-.istep .n{font-family:var(--px);font-size:.52rem;color:var(--g1);min-width:28px;padding-top:2px}
-.istep .t{font-size:.9rem;color:var(--cream);line-height:1.75}
-.idl{display:flex;flex-direction:column;gap:10px}
-.idl .btn{justify-content:center}
-
-/* FOOTER */
-footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24px;text-align:center}
-.finn{max-width:1160px;margin:0 auto;display:flex;flex-direction:column;align-items:center;gap:14px}
-.fbrand{font-family:var(--px);font-size:.5rem;color:var(--g1)}
-.flinks{display:flex;gap:22px;flex-wrap:wrap;justify-content:center}
-.flinks a{font-size:.8rem;color:var(--tan);text-decoration:none;font-weight:700;transition:color .2s}
-.flinks a:hover{color:var(--g1)}
-.fcopy{font-size:.75rem;color:#2ecc4040}
-
-/* RESPONSIVE */
-@media(max-width:900px){
-  nav{padding:0 20px}
-  .nlinks{display:none;flex-direction:column;position:absolute;top:68px;left:0;right:0;
-    background:rgba(12,18,8,.98);padding:18px;gap:4px;border-bottom:1px solid var(--border)}
-  .nlinks.open{display:flex}
-  .ham{display:flex}
-  .sgrid,.cgrid{grid-template-columns:1fr;gap:36px}
-  .slogo-wrap{flex-direction:row;justify-content:center}
-  .slogofb,.slogo{width:110px;height:110px;font-size:3rem}
-}
-@media(max-width:580px){
-  .htitle{font-size:1rem}
-  .skins-grid{grid-template-columns:repeat(auto-fill,minmax(130px,1fr))}
-}
-
-/* SCROLL REVEAL */
-.rv{opacity:0;transform:translateY(30px);transition:opacity .65s ease,transform .65s ease}
-.rv.in{opacity:1;transform:none}
-.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}.d4{transition-delay:.4s}
-</style>
-</head>
-<body>
-
-<!-- PIXEL RAIN -->
-<div class="pfield" id="pf"></div>
-
-<!-- ══ NAV ══ -->
-<nav>
-  <a class="nbrand" href="#hero">
-    <div class="logo-fb">🔥</div>
-    <span>NOX<br>GAMES</span>
-  </a>
-  <ul class="nlinks" id="nl">
-    <li><a href="#apps">Apps</a></li>
-    <li><a href="#skins">Skins</a></li>
-    <li><a href="#features">Recursos</a></li>
-    <li><a href="#sobre">Sobre</a></li>
-    <li><a href="#contato" class="ncta">Contato</a></li>
-  </ul>
-  <div class="ham" id="ham" onclick="document.getElementById('nl').classList.toggle('open')">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
-
-<!-- ══ HERO ══ -->
-<section id="hero">
-  <div class="hbg"></div>
-  <div class="badge">🔥 Nox Games Studio</div>
-  <h1 class="htitle">MODS &amp; APPS<br><span class="ac">DE OUTRO NÍVEL</span></h1>
-  <p class="hsub">Criações originais para o universo Survivalcraft.<br>Mod gratuito, skin editor premium — feito por quem ama o game.</p>
-  <div class="hbtns">
-    <a href="#apps" class="btn bg">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-      Ver Projetos
-    </a>
-    <a href="#skins" class="btn bo">🎨 Galeria de Skins</a>
-  </div>
-  <div class="hmini">
-    <div class="hmc"><div class="ico">🏗️</div><div><strong>ORIZONCRAFT</strong><span>Mod Gratuito</span></div></div>
-    <div class="hmc"><div class="ico">🎨</div><div><strong>SCSKIN EDITOR</strong><span>App Premium</span></div></div>
-  </div>
-  <div class="hground"></div>
-</section>
-
-<div class="pdiv"></div>
-
-<!-- ══ APPS ══ -->
-<section id="apps">
-  <div class="cont">
-    <div class="rv">
-      <p class="slabel">Nossos Lançamentos</p>
-      <h2 class="stitle">APPS &amp; <span class="ac">MODS</span></h2>
-      <p class="sdesc">Dois projetos nascidos da paixão pelo Survivalcraft. Baixe o mod de graça e eleve seu visual com o SCskin Editor.</p>
-    </div>
-    <div class="apps-grid">
-
-      <!-- OrizonCraft -->
-      <div class="acard rv d1">
-        <div class="athumb">
-          <div class="ribbon rf">Grátis</div>
-          <div class="ico">🏗️</div>
-        </div>
-        <div class="abody">
-          <p class="acat">Mod · Survivalcraft</p>
-          <h3 class="aname">ORIZONCRAFT</h3>
-          <p class="adesc">Mod completo para Survivalcraft que expande mundos, adiciona mecânicas e transforma sua experiência de sobrevivência. Totalmente gratuito — porque a comunidade merece.</p>
-          <div class="ameta">
-            <span class="aprice f">GRÁTIS</span>
-            <div class="abadges">
-              <span class="bsm ban">Android</span>
-              <span class="bsm bcr">Survivalcraft</span>
-            </div>
-          </div>
-          <div class="aacts">
             <a href="https://drive.google.com/uc?export=download&id=1WIG-6IksxZBf_keEbZ86WSm3puK5AzcM" target="_blank" downloadid=1WIG-6IksxZBf_keEbZ86WSm3puK5AzcM" target="_blank" class="btn bg">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
               Baixar APK
@@ -609,16 +368,15 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
           <h3 class="aname">SCSKIN EDITOR</h3>
           <p class="adesc">Editor de skins criado exclusivamente para o OrizonCraft. Interface intuitiva, pixel-perfect, com paleta completa e exportação rápida para o mod.</p>
           <div class="ameta">
-            <span class="aprice p">PREMIUM</span>
+            
             <div class="abadges">
               <span class="bsm ban">Android</span>
               <span class="bsm bed">Editor</span>
             </div>
           </div>
           <div class="aacts">
-            <a href="https://drive.google.com/uc?export=download&id=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" downloadid=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" class="btn ba">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              Baixar APK
+            <a href="https://kiwify.app/4QkU4kS" target="_blank" class="btn ba">
+              💳 COMPRAR · R$ 5,99
             </a>
             <a href="#contato" class="btn bo">Suporte</a>
           </div>
@@ -681,7 +439,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
 
     <div class="skcta rv">
       <p>🎨 CRIE SUA PRÓPRIA SKIN COM O SCSKIN EDITOR</p>
-      <a href="https://drive.google.com/uc?export=download&id=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" downloadid=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" class="btn ba">Baixar SCskin Editor</a>
+      <a href="https://kiwify.app/4QkU4kS" target="_blank" class="btn ba">💳 COMPRAR · R$ 5,99</a>
     </div>
   </div>
 </section>
@@ -774,9 +532,8 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
               OrizonCraft (Grátis)
             </a>
-            <a href="https://drive.google.com/uc?export=download&id=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" downloadid=11XDVRtvX_ssnqU7l3KxzdguKNw5cIdfj" target="_blank" class="btn ba">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
-              SCskin Editor (Premium)
+            <a href="https://kiwify.app/4QkU4kS" target="_blank" class="btn ba">
+              💳 COMPRAR · R$ 5,99
             </a>
           </div>
         </div>
