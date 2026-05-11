@@ -376,7 +376,7 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
             <div class="abadges"><span class="bsm ban">Android</span><span class="bsm bed">Editor</span></div>
           </div>
           <div class="aacts">
-            <button onclick="openUpsell()" class="btn ba">⭐ Comprar R$ 5,99</button>
+            <button onclick="openFurnitureUpsell()" class="btn ba">⭐ Comprar R$ 5,99</button>
           </div>
         </div>
       </div>
@@ -390,6 +390,34 @@ footer{background:var(--dark);border-top:1px solid var(--border);padding:30px 24
     </div>
   </div>
 </section>
+
+<!-- FURNITURE UPSELL MODAL -->
+<div class="modal-overlay" id="furnitureModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeFurnitureUpsell()">✕</button>
+    <div class="modal-head">
+      <div class="modal-ico">🪑</div>
+      <div class="modal-title">Furniture Pack Maker</div>
+      <div class="modal-sub">Crie móveis e decorações únicas para o Survivalcraft e deixe seu mundo com outro nível!</div>
+    </div>
+    <div class="modal-price-box">
+      <div class="modal-price">R$ 5,99</div>
+      <div class="modal-price-desc">Pagamento único · Sem assinatura · Acesso vitalício</div>
+    </div>
+    <ul class="modal-feats">
+      <li>Monte móveis e decorações do zero</li>
+      <li>Adicione animações aos seus itens</li>
+      <li>Exporte seu próprio Furniture Pack</li>
+      <li>Interface intuitiva e fácil de usar</li>
+      <li>Atualizações gratuitas para sempre</li>
+      <li>Suporte prioritário da equipe Nox</li>
+    </ul>
+    <div class="modal-actions">
+      <a href="https://pay.kiwify.com.br/EslQ0S0" class="btn ba" style="text-align:center">🛒 Comprar Agora — R$ 5,99</a>
+    </div>
+    <div class="modal-skip" onclick="closeFurnitureUpsell()">Não, obrigado — fechar</div>
+  </div>
+</div>
 
 <!-- UPSELL MODAL -->
 <div class="modal-overlay" id="upsellModal">
@@ -556,6 +584,18 @@ document.querySelectorAll('.rv').forEach(el=>obs.observe(el));
 // Ham
 document.querySelectorAll('#nl a').forEach(a=>{
   a.addEventListener('click',()=>document.getElementById('nl').classList.remove('open'));
+});
+
+function openFurnitureUpsell(){
+  document.getElementById('furnitureModal').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+function closeFurnitureUpsell(){
+  document.getElementById('furnitureModal').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.getElementById('furnitureModal').addEventListener('click',function(e){
+  if(e.target===this)closeFurnitureUpsell();
 });
 
 // Upsell Modal
